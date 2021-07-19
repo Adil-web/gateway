@@ -8,7 +8,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/login",
+            target: process.env.BASE_URL + "api/login",
             changeOrigin: true,
             pathRewrite: {
                 [`^/login`]: '',
@@ -24,7 +24,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/registration",
+            target: process.env.BASE_URL + "api/registration",
             changeOrigin: true,
             pathRewrite: {
                 [`^/registration`]: '',
@@ -40,7 +40,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/todos",
+            target: process.env.BASE_URL + "api/todos",
             changeOrigin: true,
             pathRewrite: {
                 [`^/todos`]: '',
@@ -56,7 +56,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/settodos",
+            target: process.env.BASE_URL + "api/settodos",
             changeOrigin: true,
             pathRewrite: {
                 [`^/settodos`]: '',
@@ -72,7 +72,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/user",
+            target: process.env.BASE_URL + "api/user",
             changeOrigin: true,
             pathRewrite: {
                 [`^/newUser`]: '',
@@ -88,7 +88,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/api/users",
+            target: process.env.BASE_URL + "api/users",
             changeOrigin: true,
             pathRewrite: {
                 [`^/users`]: '',
@@ -104,7 +104,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/client",
+            target: process.env.BASE_URL + "a/client",
             changeOrigin: true,
             pathRewrite: {
                 [`^/clients`]: '',
@@ -120,7 +120,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/client",
+            target: process.env.BASE_URL + "a/client",
             changeOrigin: true,
             pathRewrite: {
                 [`^/client`]: '',
@@ -136,7 +136,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/disconnecting-client",
+            target: process.env.BASE_URL + "a/disconnecting-client",
             changeOrigin: true,
             pathRewrite: {
                 [`^/disconnecting-client`]: '',
@@ -152,7 +152,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/disconnecting-client",
+            target: process.env.BASE_URL + "a/disconnecting-client",
             changeOrigin: true,
             pathRewrite: {
                 [`^/disconnecting-client`]: '',
@@ -168,7 +168,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/client-info",
+            target: process.env.BASE_URL + "a/client-info",
             changeOrigin: true,
             pathRewrite: {
                 [`^/client-info`]: '',
@@ -184,7 +184,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/a/client-info",
+            target: process.env.BASE_URL + "a/client-info",
             changeOrigin: true,
             pathRewrite: {
                 [`^/client-info`]: '',
@@ -200,7 +200,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/buyer",
+            target: process.env.BASE_URL + "b/buyer",
             changeOrigin: true,
             pathRewrite: {
                 [`^/buyer`]: '',
@@ -216,7 +216,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/buyer",
+            target: process.env.BASE_URL + "b/buyer",
             changeOrigin: true,
             pathRewrite: {
                 [`^/buyer`]: '',
@@ -232,7 +232,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/esf-eavr",
+            target: process.env.BASE_URL + "b/esf-eavr",
             changeOrigin: true,
             pathRewrite: {
                 [`^/esf-eavr`]: '',
@@ -248,7 +248,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/esf-eavr",
+            target: process.env.BASE_URL + "b/esf-eavr",
             changeOrigin: true,
             pathRewrite: {
                 [`^/esf-eavr`]: '',
@@ -264,7 +264,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/seller",
+            target: process.env.BASE_URL + "b/seller",
             changeOrigin: true,
             pathRewrite: {
                 [`^/seller`]: '',
@@ -280,7 +280,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/seller",
+            target: process.env.BASE_URL + "b/seller",
             changeOrigin: true,
             pathRewrite: {
                 [`^/seller`]: '',
@@ -296,7 +296,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/status",
+            target: process.env.BASE_URL + "b/status",
             changeOrigin: true,
             pathRewrite: {
                 [`^/status`]: '',
@@ -312,7 +312,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/b/status",
+            target: process.env.BASE_URL + "b/status",
             changeOrigin: true,
             pathRewrite: {
                 [`^/status`]: '',
@@ -328,7 +328,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/declared-income",
+            target: process.env.BASE_URL + "c/declared-income",
             changeOrigin: true,
             pathRewrite: {
                 [`^/declared-income`]: '',
@@ -344,7 +344,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/declared-income",
+            target: process.env.BASE_URL + "c/declared-income",
             changeOrigin: true,
             pathRewrite: {
                 [`^/declared-income`]: '',
@@ -360,7 +360,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/declared-income-confirmation",
+            target: process.env.BASE_URL + "c/declared-income-confirmation",
             changeOrigin: true,
             pathRewrite: {
                 [`^/declared-income-confirmation`]: '',
@@ -376,7 +376,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/declared-income-confirmation",
+            target: process.env.BASE_URL + "c/declared-income-confirmation",
             changeOrigin: true,
             pathRewrite: {
                 [`^/declared-income-confirmation`]: '',
@@ -392,7 +392,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/paying-taxes",
+            target: process.env.BASE_URL + "c/paying-taxes",
             changeOrigin: true,
             pathRewrite: {
                 [`^/paying-taxes`]: '',
@@ -408,7 +408,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/paying-taxes",
+            target: process.env.BASE_URL + "c/paying-taxes",
             changeOrigin: true,
             pathRewrite: {
                 [`^/paying-taxes`]: '',
@@ -424,7 +424,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/paying-taxes-confirmation",
+            target: process.env.BASE_URL + "c/paying-taxes-confirmation",
             changeOrigin: true,
             pathRewrite: {
                 [`^/paying-taxes-confirmation`]: '',
@@ -440,7 +440,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/paying-taxes-confirmation",
+            target: process.env.BASE_URL + "c/paying-taxes-confirmation",
             changeOrigin: true,
             pathRewrite: {
                 [`^/paying-taxes-confirmation`]: '',
@@ -456,7 +456,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/status-tax-reporting",
+            target: process.env.BASE_URL + "c/status-tax-reporting",
             changeOrigin: true,
             pathRewrite: {
                 [`^/status-tax-reporting`]: '',
@@ -472,7 +472,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: "http://localhost:8080/c/status-tax-reporting",
+            target: process.env.BASE_URL + "c/status-tax-reporting",
             changeOrigin: true,
             pathRewrite: {
                 [`^/status-tax-reporting`]: '',

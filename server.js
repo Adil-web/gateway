@@ -1,7 +1,8 @@
+require('dotenv').config()
+
 const express = require('express')
 
 const {ROUTES} = require("./routes");
-
 const {setupLogging} = require("./logging");
 const {setupRateLimit} = require("./ratelimit");
 const {setupCreditCheck} = require("./creditcheck");
@@ -10,8 +11,6 @@ const {setupAuth} = require("./auth");
 
 const app = express()
 const port = process.env.PORT || 3001;
-
-app.get('/', (req, res) => res.send("It's working..."))
 setupLogging(app);
 setupRateLimit(app, ROUTES);
 setupAuth(app, ROUTES);
