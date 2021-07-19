@@ -104,7 +104,7 @@ const ROUTES = [
             max: 1
         },
         proxy: {
-            target: process.env.BASE_URL + "a/client",
+            target: "https://back-pgsql.herokuapp.com/a/client",
             changeOrigin: true,
             pathRewrite: {
                 [`^/clients`]: '',
