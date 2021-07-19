@@ -9,7 +9,7 @@ const {setupProxies} = require("./proxy");
 const {setupAuth} = require("./auth");
 
 const app = express()
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 app.get('/', (req, res) => res.send("It's working..."))
 setupLogging(app);
