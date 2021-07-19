@@ -17,6 +17,8 @@ setupAuth(app, ROUTES);
 setupCreditCheck(app, ROUTES);
 setupProxies(app, ROUTES);
 
+app.get('/', (req, res) => res.end(`Server started on ${PORT}...`))
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
