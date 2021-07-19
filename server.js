@@ -11,7 +11,7 @@ const {setupAuth} = require("./auth");
 const app = express()
 const port = 3001;
 
-
+app.get('/', (req, res) => res.send("It's working..."))
 setupLogging(app);
 setupRateLimit(app, ROUTES);
 setupAuth(app, ROUTES);
